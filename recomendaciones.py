@@ -110,10 +110,9 @@ class Usuario:
             # [1:11] para excluir 0 (el índice 0 es la película de entrada en sí)
         for i in top_10_indices:    # para agregar los títulos de las 10 mejores películas similares a la lista de películas recomendadas
             recommended_movies.append(list(df['Title'])[i])
-    print(f"Te recomiendo estas peliculas:\n",recommended_movies)
+        print(f"Te recomiendo estas peliculas:\n",recommended_movies)
     if c==1:
         print('comedia') #INSERTAR LISTA DE TRES PELICULAS DE COMEDIA
-         print('accion')#INSERTAR LISTA DE TRES PELICULAS DE ACCION
         df = pd.read_csv('IMDB_Top250Engmovies2_OMDB_Detailed.csv')
         df = df[['Title','Director','Actors','Plot','Genre']]
         df['Plot'] = df['Plot'].str.replace('[^\w\s]','')
@@ -172,10 +171,9 @@ class Usuario:
             # [1:11] para excluir 0 (el índice 0 es la película de entrada en sí)
         for i in top_10_indices:    # para agregar los títulos de las 10 mejores películas similares a la lista de películas recomendadas
             recommended_movies.append(list(df['Title'])[i])
-    print(f"Te recomiendo estas peliculas:\n",recommended_movies)
+        print(f"Te recomiendo estas peliculas:\n",recommended_movies)
     if d==1:
         print('drama') #INSERTAR LISTA DE TRES PELICULAS DE DRAMA
-        print('accion')#INSERTAR LISTA DE TRES PELICULAS DE ACCION
         df = pd.read_csv('IMDB_Top250Engmovies2_OMDB_Detailed.csv')
         df = df[['Title','Director','Actors','Plot','Genre']]
         df['Plot'] = df['Plot'].str.replace('[^\w\s]','')
@@ -234,10 +232,9 @@ class Usuario:
             # [1:11] para excluir 0 (el índice 0 es la película de entrada en sí)
         for i in top_10_indices:    # para agregar los títulos de las 10 mejores películas similares a la lista de películas recomendadas
             recommended_movies.append(list(df['Title'])[i])
-    print(f"Te recomiendo estas peliculas:\n",recommended_movies)
+        print(f"Te recomiendo estas peliculas:\n",recommended_movies)
     if t==1:
         print('terror') #INSERTAR LISTA DE TRES PELICULAS DE TERROR
-        print('accion')#INSERTAR LISTA DE TRES PELICULAS DE ACCION
         df = pd.read_csv('IMDB_Top250Engmovies2_OMDB_Detailed.csv')
         df = df[['Title','Director','Actors','Plot','Genre']]
         df['Plot'] = df['Plot'].str.replace('[^\w\s]','')
@@ -296,10 +293,9 @@ class Usuario:
             # [1:11] para excluir 0 (el índice 0 es la película de entrada en sí)
         for i in top_10_indices:    # para agregar los títulos de las 10 mejores películas similares a la lista de películas recomendadas
             recommended_movies.append(list(df['Title'])[i])
-    print(f"Te recomiendo estas peliculas:\n",recommended_movies)
+        print(f"Te recomiendo estas peliculas:\n",recommended_movies)
     else:
         print('suspenso') #INSERTAR LISTA DE TRES PELICULAS DE suspenso
-        print('accion')#INSERTAR LISTA DE TRES PELICULAS DE ACCION
         df = pd.read_csv('IMDB_Top250Engmovies2_OMDB_Detailed.csv')
         df = df[['Title','Director','Actors','Plot','Genre']]
         df['Plot'] = df['Plot'].str.replace('[^\w\s]','')
@@ -358,5 +354,5 @@ class Usuario:
             # [1:11] para excluir 0 (el índice 0 es la película de entrada en sí)
         for i in top_10_indices:    # para agregar los títulos de las 10 mejores películas similares a la lista de películas recomendadas
             recommended_movies.append(list(df['Title'])[i])
-    print(f"Te recomiendo estas peliculas:\n",recommended_movies)
+        print(f"Te recomiendo estas peliculas:\n",recommended_movies)
 
