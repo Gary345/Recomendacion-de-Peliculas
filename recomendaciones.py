@@ -97,7 +97,7 @@ class Usuario:
     # para otros valores, por ejemplo, 0,1578947, la película x y la película y tienen un valor de similitud de 0,1578947
         cosine_sim = cosine_similarity(count_matrix, count_matrix)
         # para crear una serie para títulos de películas por el genero que se pueden usar como índices (cada índice se asigna a un título de película)
-        indices = pd.Series(df['Accion'])
+        indices = pd.Series(df['Genre'])
         indices[:20]
   
     # esta función toma el genero de una película como entrada y devuelve las 10 mejores películas recomendadas (similares)  
@@ -109,7 +109,7 @@ class Usuario:
         top_10_indices = list(score_series.iloc[1:11].index)   # para obtener los índices de las 10 películas más similares
             # [1:11] para excluir 0 (el índice 0 es la película de entrada en sí)
         for i in top_10_indices:    # para agregar los títulos de las 10 mejores películas similares a la lista de películas recomendadas
-            recommended_movies.append(list(df['Accion'])[i])
+            recommended_movies.append(list(df['Genre'])[i])
     print(f"Te recomiendo estas peliculas segun el genero:\n",recommended_movies)
     if b==1:
         print('biografica') #INSERTAR LISTA DE TRES PELICULAS BIOGRAFICAS
